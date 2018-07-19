@@ -1,0 +1,82 @@
+<html>
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'static/style.css') }}">
+  
+  <style>
+         header{
+  background-color: linen;
+}
+h1{
+  font-family: galatino;
+  font-size: 45px;
+  text-align: center; 
+}
+
+p{
+  font-family: galatino;
+  font-size: 45px;
+  text-align: center;
+}
+
+.Buttn{
+  padding-left:50px ;
+  margin-top:150px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none; 
+}
+.Buttn h4{
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.btn{
+  width: 30%;
+  height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+#strtbtn{
+  background-color: green;
+  border: none;
+}
+#stpbtn{
+  background-color: red;
+  border: none;
+}
+#lstbtn{
+  background-color: #808080;
+      border: none;
+}
+
+</style>
+</head>
+
+<body >
+<header>
+  <h1>Welcome to Virtualbox controller!</h1>
+</header>
+
+<section class="Buttn">
+  <h4>Please select an action to perform</h4>
+
+<form action="{{ url_for('startvmid', id='startbtn') }}" method="POST">
+    <input type="submit" name="str_vm" value="START" class="btn" id="strtbtn">
+</form>
+
+<form action="{{ url_for('stopvmid', id='stopbtn') }}" method="POST">
+
+    <input type="submit" name="stp_vm" value="STOP" class="btn" id="stpbtn">
+</form>
+
+<form action="{{ url_for('listvm', id='listbtn') }}" method="POST">
+    <input type="submit" name="li_vm" value="LIST" class="btn" id="lstbtn">
+</form>
+
+</section>
+
+</body>
+</html>
