@@ -1,0 +1,43 @@
+header{
+  background-color: linen;
+}
+h1{
+  font-family: galatino;
+  font-size: 45px;
+  text-align: center; 
+}
+
+p{
+  font-family: galatino;
+  font-size: 45px;
+  text-align: center;
+}
+
+.Buttn{
+  padding-left:50px ;
+  margin-top:150px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none; 
+}
+.Buttn h4{
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.btn{
+  width: 30%;
+  height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+#startbtn{
+  background-color: green;
+}
+#stopbtn{
+  background-color: red;
+}
+#listbtn{
+  background-color: #808080;
